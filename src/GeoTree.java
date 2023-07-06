@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class GeoTree {
+public class GeoTree implements Serializable {
     private ArrayList<Link> tree = new ArrayList<>();
 
     public ArrayList<Link> getTree() {

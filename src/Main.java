@@ -1,4 +1,13 @@
 public class Main {
+    public static void main(String[] args) {
+       FileHandler fileHandler = new FileHandler();
+       
+       GeoTree tree = testGeoTree();
+       System.out.println(tree);
+
+       fileHandler.save(tree, "src/tree.out");
+    }
+    static GeoTree testGeoTree(){
     Human irina = new Human("Ирина", 56);
     Human igor = new Human("Игорь", 60);
     Human vasya = new Human("Вася", 30);
@@ -33,6 +42,5 @@ public class Main {
         
     System.out.println("Жена Игоря");
     System.out.println(new Research(gt).spend(igor, Relationship.vife));
-
-    
+    } 
 }

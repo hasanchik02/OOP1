@@ -1,7 +1,7 @@
 public class Link {
-    Human h1;
-    Relationship re;
-    Human h2; 
+    private Human h1;
+    private Relationship re;
+    private Human h2; 
     
     public Link(Human p1, Relationship re, Human p2) {
         this.h1 = h1;
