@@ -1,3 +1,10 @@
+import geotree.GeoTree;
+import geotree.Link;
+import geotree.Relationship;
+import human.Human;
+import human.sort.SortByAge;
+import serializable.FileHandler;
+
 public class Main {
     public static void main(String[] args) {
        FileHandler fileHandler = new FileHandler();
@@ -42,5 +49,8 @@ public class Main {
         
     System.out.println("Жена Игоря");
     System.out.println(new Research(gt).spend(igor, Relationship.vife));
+
+    System.out.println(new SortByName(geoTree));
+    System.out.println(new SortByAge(geoTree));
     } 
 }
